@@ -20,21 +20,46 @@ body {
   line-height: 1.6;
 }
 
-header {
-  text-align: center;
+.hero-header {
+  background-color: var(--pink-light);
   padding: 3rem 1rem;
-  background: var(--pink-light);
 }
 
-header h1 {
+.hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-left: 4rem;
+}
+
+.hero-logo-circle {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 220px;
+}
+
+.hero-text h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.8rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
 }
 
-header p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+.hero-text .btn {
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
 }
 
 .btn {
@@ -366,4 +391,16 @@ html {
   width: 60%;
   margin: 3rem auto;
   opacity: 0.4;
+}
+@keyframes slowSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-logo-circle {
+  animation: slowSpin 25s linear infinite;
 }
