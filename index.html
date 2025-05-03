@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mariela GU Nails</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  
+  
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#book">Book</a></li>
+        </ul>
+      </nav>
+      
+      <header id="hero">
+        <img src="LOGO.jpg" alt="Mariela GU Nails Logo" class="hero-logo">
+        <h1>Mariela GU Nails</h1>
+        <p>Técnica en uñas - New Brunswick, NJ</p>
+        <button class="btn"> Book Appointment / Citas </button>
+      </header>
+      
+ <!-- Paste this between any two sections -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z" fill="#f9d6e6"></path>
+  </svg>
+</div>
+
+  <section id="services" class="section services">
+    <h2>Servicios</h2>
+    <div class="services-carousel">
+      <button class="scroll-btn left">&#8592;</button>
+      <div class="bottle-track" id="bottleTrack">
+        <div class="bottle-card">
+          <div class="bottle-cap"></div>
+          <div class="bottle-body">
+            <p><strong>Gel Manicure</strong><br>$25</p>
+          </div>
+        </div>
+        <div class="bottle-card">
+          <div class="bottle-cap"></div>
+          <div class="bottle-body">
+            <p><strong>Acrylic Fullset</strong><br>$65</p>
+          </div>
+        </div>
+        <div class="bottle-card">
+            <div class="bottle-cap"></div>
+            <div class="bottle-body">
+              <p><strong>Acrylic Fullset</strong><br>$65</p>
+            </div>
+          </div>
+          <div class="bottle-card">
+            <div class="bottle-cap"></div>
+            <div class="bottle-body">
+              <p><strong>Acrylic Fullset</strong><br>$65</p>
+            </div>
+          </div>
+          <div class="bottle-card">
+            <div class="bottle-cap"></div>
+            <div class="bottle-body">
+              <p><strong>Acrylic Fullset</strong><br>$65</p>
+            </div>
+          </div>
+        <div class="bottle-card">
+          <div class="bottle-cap"></div>
+          <div class="bottle-body">
+            <p><strong>Gel Pedicure</strong><br>$35</p>
+          </div>
+        </div>
+        <div class="bottle-card">
+            <div class="bottle-cap"></div>
+            <div class="bottle-body">
+              <p><strong>Gel Pedicure</strong><br>$35</p>
+            </div>
+          </div>
+        <div class="bottle-card">
+          <div class="bottle-cap"></div>
+          <div class="bottle-body">
+            <p><strong>Freestyle Set</strong><br>$70</p>
+          </div>
+        </div>
+      </div>
+      <button class="scroll-btn right">&#8594;</button>
+    </div>
+  </section>
+  
+  
+  <section id="gallery" class="section gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="nail1.jpg" alt="Nail Design 1" onclick="openLightbox(this)">
+      <img src="nail2.jpg" alt="Nail Design 2" onclick="openLightbox(this)">
+      <img src="nail3.jpg" alt="Nail Design 3" onclick="openLightbox(this)">
+      <img src="nail4.jpg" alt="Nail Design 4" onclick="openLightbox(this)">
+      <img src="nail5.jpg" alt="Nail Design 5" onclick="openLightbox(this)">
+    </div>
+  </section>
+  
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Full View">
+  </div>
+  </section>
+ <!-- Paste this between any two sections -->
+<!-- Paste this between sections -->
+<hr class="glitter-line">
+
+  
+  <section id="about" class="section about">
+    <div class="about-wrapper">
+      <img src="LOGO.jpg" alt="Mariela Logo" class="about-img">
+      <div class="about-text">
+        <h2>Sobre Mí</h2>
+        <p>
+          ¡Hola! Soy Mariela, una técnica en uñas mexicana con más de 5 años de experiencia en el mundo del nail art. Me apasiona crear diseños únicos que reflejen tu estilo y personalidad. Mi prioridad es brindarte un servicio de calidad, en un ambiente cómodo y de confianza, donde podamos construir una relación a largo plazo. ¡Gracias por confiar en mí para cuidar y embellecer tus uñas!
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer id="book">
+    <p class="footer-note">© 2025 Mariela GU Nails • All Rights Reserved</p>
+  </footer>
+  
+  <script>
+    const bottleTrack = document.getElementById('bottleTrack');
+    const leftBtn = document.querySelector('.scroll-btn.left');
+    const rightBtn = document.querySelector('.scroll-btn.right');
+  
+    leftBtn.addEventListener('click', () => {
+      bottleTrack.scrollBy({ left: -200, behavior: 'smooth' });
+    });
+  
+    rightBtn.addEventListener('click', () => {
+      bottleTrack.scrollBy({ left: 200, behavior: 'smooth' });
+    });
+  </script>
+ <div class="floating-icons">
+    <a href="https://instagram.com/marielagunice24" target="_blank" title="Instagram">
+      <div class="icon-bubble">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+        <span>@marielagunice24</span>
+      </div>
+    </a>
+    <a href="https://facebook.com" target="_blank" title="Facebook">
+      <div class="icon-bubble">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" />
+        <span>Mariela GU</span>
+      </div>
+    </a>
+    <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp">
+      <div class="icon-bubble">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" />
+        <span>WhatsApp</span>
+      </div>
+    </a>
+    <a href="https://tiktok.com" target="_blank" title="TikTok">
+      <div class="icon-bubble">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" />
+        <span>@yourtiktokname</span>
+      </div>
+    </a>
+    <a href="tel:1234567890" title="Call Mariela">
+        <div class="icon-bubble">
+          <img src="https://cdn-icons-png.flaticon.com/512/455/455705.png" alt="Phone Icon" class="icon-img" />
+          <span>(123) 456-7890</span>
+        </div>
+      </a>
+      
+      
+       
+  </div>
+  
+  
+  <script>
+  function openLightbox(img) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    lightboxImg.src = img.src;
+    lightbox.style.display = "flex";
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
